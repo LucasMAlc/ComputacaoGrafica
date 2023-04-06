@@ -1,5 +1,7 @@
 function setup() {
-  createCanvas(400, 600);
+  var msg = createP('Clique para gerar uma nova árvore');
+  msg.position(10,10);
+  createCanvas(400, 400);
 }
 
 function draw() {
@@ -9,8 +11,12 @@ function draw() {
   noLoop();
 }
 
+function mousePressed() {
+  redraw();
+}
+
 function branch(len) {
-  strokeWeight(len/5); // largura da linha
+  strokeWeight(len/7); // largura da linha
   
   line(0, 0, 0, -len);
   translate(0, -len);
