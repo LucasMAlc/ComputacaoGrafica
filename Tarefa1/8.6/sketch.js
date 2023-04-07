@@ -12,8 +12,6 @@ function draw() {
 }
 
 function branch(len, branchNum) {
-  strokeWeight(2);
-
   line(0, 0, 0, -len);
   translate(0, -len);
 
