@@ -16,7 +16,7 @@ function mousePressed() {
 }
 
 function branch(len) {
-  strokeWeight(len/10); // largura da linha
+  strokeWeight(len/10);
   
   line(0, 0, 0, -len);
   translate(0, -len);
