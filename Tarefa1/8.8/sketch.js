@@ -16,7 +16,6 @@ function mousePressed() {
 }
 
 function branch(len) {
-  console.log(len);
   strokeWeight(len/10); // largura da linha
   
   line(0, 0, 0, -len);
